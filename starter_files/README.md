@@ -84,4 +84,5 @@ https://youtu.be/uPRFgUMh9DA
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+
 I ran the benchmark.sh script. This worked fine for me. The endpoint.py script did not work even though I think I understand what I have to do there and it worked for me in the exercise. I saw the post about the order of the keys in JSON and tried this as solution. After that I still got the same error and was not able to fix it. 
