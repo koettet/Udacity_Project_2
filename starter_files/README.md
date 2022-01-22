@@ -20,15 +20,54 @@ On more step is then done with creating a pipeline that includes retaining the m
    # Uploaded data
    ![step2_pic1_dataset](https://user-images.githubusercontent.com/96047873/150637403-d7f6b45b-9434-4f13-a6da-1a71d5149786.png)
    
-   # 
-   
-   
+   # Completed run
+   ![step2_pic_2_ML-run](https://user-images.githubusercontent.com/96047873/150637576-23533116-06e5-4b1e-ae7e-4a790a6c6664.PNG)
+
+
 2) Best model is deployed with authentification enabled and using "Azure Container Instance (ACI)".
-3) Enabling Application Insights via a script (logs.py). This could also be done via azure when deploying the model.
-4) Swagger documentusing the Swagger-URL provides by Azure for the deployed model.
-5) Consumption of model endpoint by using the endpoint.py script. Here the URL and a key for the deployed model have to be used to authenticate.
-   I am having an issue here. The forum suggested that the order of the keys in JSON have to be the same as in Azure. However, this did not work for me. To show that    the endpoint could be consumed, I ran the benchmark. This worked with the same JSON.
-6) Creation of a pipeline including a new model training with auto-ML. Then also publishing this pipeline and consuming it.  
+
+   # Endpoint section
+   ![step4_pic1_ApplicationInsights](https://user-images.githubusercontent.com/96047873/150637607-7a1bc560-6148-4a66-b042-4d66d05f735d.png)
+
+
+4) Enabling Logging/Application Insights via a script (logs.py). This could also be done via azure when deploying the model.
+   
+   # Logs
+   ![step4_pic2_logs](https://user-images.githubusercontent.com/96047873/150637651-720a5a42-a779-4eb3-8c93-eeb37f7a772f.png)
+  
+  
+5) Swagger documentation using the Swagger-URL provides by Azure for the deployed model.
+
+   # Swagger
+   ![step5_pic1_swagger1](https://user-images.githubusercontent.com/96047873/150637660-0bd94a8e-7c34-40ad-beff-052776b2ca3e.png)
+   ![step5_pic2_swagger2](https://user-images.githubusercontent.com/96047873/150637664-c82ea25b-9cfd-45bd-96d4-25b125ff94a8.png)
+
+
+6) Consumption of model endpoint by using the endpoint.py script. Here the URL and a key for the deployed model have to be used to authenticate.
+   I am having an issue here. The forum suggested that the order of the keys in JSON have to be the same as in Azure. However, this did not work for me.
+   To show that the endpoint could be consumed, I ran the benchmark. This worked with the same JSON.
+
+# Issue with endpoint.py
+![step6_pic1_consume_error](https://user-images.githubusercontent.com/96047873/150637710-7f877a88-0199-4601-ab8e-75dbce443fcc.png)
+
+# Benchmark as alternative
+![step6_pic2_benchmark](https://user-images.githubusercontent.com/96047873/150637722-7c5ca602-f5e9-436e-b290-663ffdbe0fec.png)
+
+7) Creation of a pipeline including a new model training with auto-ML. Then also publishing this pipeline and consuming it.
+
+   # Running pipeline
+   ![step7_pic1_pipeline](https://user-images.githubusercontent.com/96047873/150637759-723834d9-9ae2-425c-acfc-bc2a948c5746.png)
+
+   # Completed pipeline runs
+   ![step7_pic2_pipelines](https://user-images.githubusercontent.com/96047873/150637785-7b6e5d71-25f7-46d9-8fa6-896dc9cf9fc1.PNG)
+   
+   # pipeline endpoints
+   ![step7_pic3_endpoint](https://user-images.githubusercontent.com/96047873/150637794-8dab5e83-0813-4dfb-a57d-a9a682e1bf65.PNG)
+   
+   #
+
+
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
