@@ -25,7 +25,7 @@ On more step is then done with creating a pipeline that includes retaining the m
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
-# youtube-Link here
+https://youtu.be/uPRFgUMh9DA
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
