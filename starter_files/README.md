@@ -63,16 +63,20 @@ On more step is then done with creating a pipeline that includes retaining the m
    
    # pipeline endpoints
    ![step7_pic3_endpoint](https://user-images.githubusercontent.com/96047873/150637794-8dab5e83-0813-4dfb-a57d-a9a682e1bf65.PNG)
+   ![step7_pic4_Pipeline_rest_endpoint](https://user-images.githubusercontent.com/96047873/150637946-f21554ca-f20c-425a-9db2-1d44dcd4ecd5.png)
+
+   # RunDetails output
+   ![step7_pic5_bank_autoML_module](https://user-images.githubusercontent.com/96047873/150637943-31d9594f-f624-4756-abf3-6c39fc8c1fc8.PNG)
    
-   #
-
-
+   # Published pipeline overview
+   ![step7_pic6_published_pipeline_overview](https://user-images.githubusercontent.com/96047873/150637960-1fcb6b78-ba00-4f2e-ae25-ebef508075a5.PNG)
 
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
 https://youtu.be/uPRFgUMh9DA
+
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
