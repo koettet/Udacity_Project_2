@@ -67,9 +67,8 @@ On more step is then done with creating a pipeline that includes retaining the m
    
    # pipeline endpoints
    ![step7_pic3_endpoint](https://user-images.githubusercontent.com/96047873/150637794-8dab5e83-0813-4dfb-a57d-a9a682e1bf65.PNG)
-   ![step7_pic4_Pipeline_rest_endpoint](https://user-images.githubusercontent.com/96047873/150637946-f21554ca-f20c-425a-9db2-1d44dcd4ecd5.png)
-   
-
+   ![pipeline_endpoint](https://user-images.githubusercontent.com/96047873/150654158-7d895747-5f68-4205-8339-22cb813da112.PNG)
+ 
    # RunDetails output
    ![step7_pic5_bank_autoML_module](https://user-images.githubusercontent.com/96047873/150637943-31d9594f-f624-4756-abf3-6c39fc8c1fc8.PNG)
    
@@ -85,5 +84,3 @@ https://youtu.be/Q70Mxx-Pp5Y
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
-
-I ran the benchmark.sh script. This worked fine for me. The endpoint.py script did not work even though I think I understand what I have to do there and it worked for me in the exercise. I saw the post about the order of the keys in JSON and tried this as solution. After that I still got the same error and was not able to fix it. 
