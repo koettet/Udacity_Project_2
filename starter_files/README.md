@@ -81,6 +81,11 @@ On more step is then done with creating a pipeline that includes retaining the m
 
 https://youtu.be/Q70Mxx-Pp5Y
 
+## Suggestions for project improvement
+As a real world project I would work on the auto-ML training and specify more details the. Assuming that the model is retraing on a regular basis and the amount of data might grow over time, it might make sense to save some time there by keeping the model training efficient. In order to achieve this, some models could be blocked.
+
+I also feel like the consumption of the model would need to be easier. It might be a good option to be able to use files with a lot of new dataset that users want to use as model input. This could be done, but it depends on the use case of this model, if it is useful.
+
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
