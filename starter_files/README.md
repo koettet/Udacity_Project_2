@@ -52,7 +52,7 @@ On more step is then done with creating a pipeline that includes retaining the m
    To show that the endpoint could be consumed, I ran the benchmark. This worked with the same JSON.
 
 # Issue with endpoint.py
-![step6_pic1_consume_error](https://user-images.githubusercontent.com/96047873/150637710-7f877a88-0199-4601-ab8e-75dbce443fcc.png)
+
 
 # Benchmark as alternative
 ![step6_pic2_benchmark](https://user-images.githubusercontent.com/96047873/150637722-7c5ca602-f5e9-436e-b290-663ffdbe0fec.png)
@@ -79,7 +79,7 @@ On more step is then done with creating a pipeline that includes retaining the m
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
-https://youtu.be/uPRFgUMh9DA
+https://youtu.be/Q70Mxx-Pp5Y
 
 
 ## Standout Suggestions
