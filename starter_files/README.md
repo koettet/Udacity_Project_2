@@ -10,6 +10,10 @@ On more step is then done with creating a pipeline that includes retaining the m
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
 
+# Diagram
+![Architectural_Diagram](https://user-images.githubusercontent.com/96047873/150638351-d2cafebe-fa65-4554-8e3a-0ed85be97b41.png)
+
+
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
