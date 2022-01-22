@@ -18,8 +18,7 @@ On more step is then done with creating a pipeline that includes retaining the m
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
-1) Creating an auto-ML run including uploading the data for training, creating a compute cluster and configuring auto-ML.
-   Result: trained best model ready for deployment.
+1) I started by creating an Auto-ML run. This includes uploading the bankmarketing data, creating a compute-cluster, defining the model type and finally starting the ML run to obtain models.
    
    # Uploaded data
    ![step2_pic1_dataset](https://user-images.githubusercontent.com/96047873/150637403-d7f6b45b-9434-4f13-a6da-1a71d5149786.png)
@@ -28,36 +27,37 @@ On more step is then done with creating a pipeline that includes retaining the m
    ![step2_pic_2_ML-run](https://user-images.githubusercontent.com/96047873/150637576-23533116-06e5-4b1e-ae7e-4a790a6c6664.PNG)
 
 
-2) Best model is deployed with authentification enabled and using "Azure Container Instance (ACI)".
+2) Next, I picked the best model to deploy. I picked the Azure Container instance as Cumpote type for this. Further I chose to enable authentication for secrurity. 
 
    # Endpoint section
    ![step4_pic1_ApplicationInsights](https://user-images.githubusercontent.com/96047873/150637607-7a1bc560-6148-4a66-b042-4d66d05f735d.png)
 
 
-4) Enabling Logging/Application Insights via a script (logs.py). This could also be done via azure when deploying the model.
+3) Then I enabled Application Insights via the logs.py script and took a look at the log output to make sure everything is working.
    
    # Logs
    ![step4_pic2_logs](https://user-images.githubusercontent.com/96047873/150637651-720a5a42-a779-4eb3-8c93-eeb37f7a772f.png)
   
   
-5) Swagger documentation using the Swagger-URL provides by Azure for the deployed model.
+4) If you want to know what the model expects as input and how the output should look like, you can use swagger. Azure offers a swagger.json file to download and with the serve.py and the swagger.sh you can take a look at the documentation below. This helps to consome the model.
 
    # Swagger
    ![step5_pic1_swagger1](https://user-images.githubusercontent.com/96047873/150637660-0bd94a8e-7c34-40ad-beff-052776b2ca3e.png)
    ![step5_pic2_swagger2](https://user-images.githubusercontent.com/96047873/150637664-c82ea25b-9cfd-45bd-96d4-25b125ff94a8.png)
 
 
-6) Consumption of model endpoint by using the endpoint.py script. Here the URL and a key for the deployed model have to be used to authenticate.
-   I am having an issue here. The forum suggested that the order of the keys in JSON have to be the same as in Azure. However, this did not work for me.
-   To show that the endpoint could be consumed, I ran the benchmark. This worked with the same JSON.
+5) To use the model, we can make use of the endpoint.py script to send a post request to our model. For this we need to update the URL and the key for authentication in the script. Both can be found in Azure under the details of the endpoint. Using the script which also contains 2 new sets of data for the model to evaluate we get the following result.
 
-# Issue with endpoint.py
+# endpoint.py results
+![endpoint_results](https://user-images.githubusercontent.com/96047873/150653967-62235155-47e3-4dc0-aa18-3d33fe97110f.PNG)
+
+6) To make sure our endpoint is also able to handle a bunch of requests, we can benchmark the performance and check if everything is good there. If we update the benchmark.sh script with the information of our endpoint, it will send ten times the two datasets created by endpoint.py and show us if any requests failed and how much time they took.
+
+# Benchmark results
+![benchmark_results](https://user-images.githubusercontent.com/96047873/150654031-3678cc80-fa8f-4ba0-9f36-adfc2f56716c.PNG)
 
 
-# Benchmark as alternative
-![step6_pic2_benchmark](https://user-images.githubusercontent.com/96047873/150637722-7c5ca602-f5e9-436e-b290-663ffdbe0fec.png)
-
-7) Creation of a pipeline including a new model training with auto-ML. Then also publishing this pipeline and consuming it.
+7) To automate more steps we can make use of a pipeline. The pipeline makes sens if we expext to retrain the model multiple times. This might make sense if we get new data over time and want to include this in our training. The working pipeline is also published with this notebook: "aml-pipelines-with-automated-machine-learning-step.ipynb". A published pipeline can be used even from outside of Azure.
 
    # Running pipeline
    ![step7_pic1_pipeline](https://user-images.githubusercontent.com/96047873/150637759-723834d9-9ae2-425c-acfc-bc2a948c5746.png)
@@ -68,6 +68,7 @@ On more step is then done with creating a pipeline that includes retaining the m
    # pipeline endpoints
    ![step7_pic3_endpoint](https://user-images.githubusercontent.com/96047873/150637794-8dab5e83-0813-4dfb-a57d-a9a682e1bf65.PNG)
    ![step7_pic4_Pipeline_rest_endpoint](https://user-images.githubusercontent.com/96047873/150637946-f21554ca-f20c-425a-9db2-1d44dcd4ecd5.png)
+   
 
    # RunDetails output
    ![step7_pic5_bank_autoML_module](https://user-images.githubusercontent.com/96047873/150637943-31d9594f-f624-4756-abf3-6c39fc8c1fc8.PNG)
