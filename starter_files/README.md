@@ -9,13 +9,19 @@ On more step is then done with creating a pipeline that includes retaining the m
 
 ## Architectural Diagram
 *TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
-![step2_pic1_dataset](https://user-images.githubusercontent.com/96047873/150637403-d7f6b45b-9434-4f13-a6da-1a71d5149786.png)
+
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
 1) Creating an auto-ML run including uploading the data for training, creating a compute cluster and configuring auto-ML.
    Result: trained best model ready for deployment.
+   
+   # Uploaded data
+   ![step2_pic1_dataset](https://user-images.githubusercontent.com/96047873/150637403-d7f6b45b-9434-4f13-a6da-1a71d5149786.png)
+   
+   # 
+   
    
 2) Best model is deployed with authentification enabled and using "Azure Container Instance (ACI)".
 3) Enabling Application Insights via a script (logs.py). This could also be done via azure when deploying the model.
