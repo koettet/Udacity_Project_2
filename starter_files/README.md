@@ -15,6 +15,7 @@ On more step is then done with creating a pipeline that includes retaining the m
 
 1) Creating an auto-ML run including uploading the data for training, creating a compute cluster and configuring auto-ML.
    Result: trained best model ready for deployment.
+   
 2) Best model is deployed with authentification enabled and using "Azure Container Instance (ACI)".
 3) Enabling Application Insights via a script (logs.py). This could also be done via azure when deploying the model.
 4) Swagger documentusing the Swagger-URL provides by Azure for the deployed model.
@@ -29,3 +30,4 @@ https://youtu.be/uPRFgUMh9DA
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+I ran the benchmark.sh script. This worked fine for me. The endpoint.py script did not work even though I think I understand what I have to do there and it worked for me in the exercise. I saw the post about the order of the keys in JSON and tried this as solution. After that I still got the same error and was not able to fix it. 
